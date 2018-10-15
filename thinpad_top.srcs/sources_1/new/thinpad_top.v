@@ -125,21 +125,61 @@ end
 //           // ---d---  p
 
 // 7段数码管译码器演示，将number用16进制显示在数码管上面
-reg[7:0] number;
-SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
-SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
+// reg[7:0] number;
+// SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
+// SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
 
 reg[15:0] led_bits;
 assign leds = led_bits;
 
+reg[31:0] input_a;
+reg[31:0] input_b;
+reg[32:0] result;
+reg[3:0] op;
+reg fo;
+reg[1:0] flag;
+
+parameter INPUT_A = 2'b00;
+parameter INPUT_B = 2'b01;
+parameter CALC_OP = 2'b10;
+parameter CALC_FO = 2'b11;
+
 always@(posedge clock_btn or posedge reset_btn) begin
-    if(reset_btn)begin //复位按下，设置LED和数码管为初始值
-        number<=0;
-        led_bits <= 16'h1;
+    if(reset_btn) begin // 复位按下，设置输入数和LED数码管为初始值
+        flag <= INPUT_A;
+        led_bits <= 16'h0000;
     end
-    else begin //每次按下时钟按钮，数码管显示值加1，LED循环左移
-        number <= number+1;
-        led_bits <= {led_bits[14:0],led_bits[15]};
+    else begin // 每次按下时钟按钮，根据输入得到输出
+       case(flag)
+       INPUT_A : begin
+            input_a <= dip_sw;
+            flag <= INPUT_B;
+       end
+       INPUT_B : begin
+            input_b <= dip_sw;
+            flag <= CALC_OP;
+       end
+       CALC_OP : begin
+            op <= dip_sw[3:0];
+            case(op)
+            4'b0000 : begin // ADD
+                result <= {input_a[31], input_a} + {input_b[31], input_b};
+            end
+            default : begin // DEFAULT
+                result <= {input_a[31], input_a} + {input_b[31], input_b};
+            end
+            endcase
+            fo <= result[32];
+            led_bits = result[15:0];
+            flag <= CALC_FO;
+       end
+       CALC_FO : begin
+            led_bits = {fo, fo, fo, fo, fo, fo, fo, fo, fo, fo, fo, fo, fo, fo, fo, fo};
+            flag <= INPUT_A;
+       end
+       default : begin
+       end
+       endcase
     end
 end
 
