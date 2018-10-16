@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Oct 16 19:22:28 2018
+| Date         : Tue Oct 16 20:17:27 2018
 | Host         : DESKTOP-N99O3L4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file thinpad_top_control_sets_placed.rpt
 | Design       : thinpad_top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    21 |
-| Unused register locations in slices containing registers |    56 |
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    50 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,9 +35,8 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |            5 |
-|      8 |            1 |
 |     12 |            1 |
-|    16+ |           14 |
+|    16+ |           13 |
 +--------+--------------+
 
 
@@ -47,11 +46,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              68 |           11 |
+| No           | No                    | No                     |              68 |           13 |
 | No           | No                    | Yes                    |              12 |            4 |
 | No           | Yes                   | No                     |              66 |           10 |
-| Yes          | No                    | No                     |             118 |           16 |
-| Yes          | No                    | Yes                    |             226 |           39 |
+| Yes          | No                    | No                     |             110 |           12 |
+| Yes          | No                    | Yes                    |             160 |           34 |
 | Yes          | Yes                   | No                     |              22 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -63,26 +62,24 @@ Table of Contents
 |     Clock Signal     |                   Enable Signal                   |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
 +----------------------+---------------------------------------------------+---------------------------------------------+------------------+----------------+
 |  clk_50M_IBUF_BUFG   | ext_uart_r/tickgen/OversamplingTick               |                                             |                1 |              2 |
-|  clock_btn_IBUF_BUFG | led_bits[3]                                       | reset_btn_IBUF                              |                1 |              2 |
-|  clock_btn_IBUF_BUFG | led_bits[2]                                       | reset_btn_IBUF                              |                1 |              2 |
-|  clock_btn_IBUF_BUFG | led_bits[0]                                       | reset_btn_IBUF                              |                1 |              2 |
-|  clock_btn_IBUF_BUFG | led_bits[1]                                       | reset_btn_IBUF                              |                1 |              2 |
-|  clock_btn_IBUF_BUFG | op                                                |                                             |                1 |              8 |
+|  clock_btn_IBUF_BUFG | led_bits__0[0]                                    | reset_btn_IBUF                              |                1 |              2 |
+|  clock_btn_IBUF_BUFG | led_bits__0[1]                                    | reset_btn_IBUF                              |                1 |              2 |
+|  clock_btn_IBUF_BUFG | led_bits__0[3]                                    | reset_btn_IBUF                              |                1 |              2 |
+|  clock_btn_IBUF_BUFG | led_bits__0[2]                                    | reset_btn_IBUF                              |                1 |              2 |
 |  clock_btn_IBUF_BUFG |                                                   | reset_btn_IBUF                              |                4 |             12 |
 |  clk_50M_IBUF_BUFG   | ext_uart_r/tickgen/RxD_data_reg[0][0]             |                                             |                1 |             16 |
 |  clk_50M_IBUF_BUFG   | ext_uart_r/E[0]                                   |                                             |                2 |             16 |
-|  clk_50M_IBUF_BUFG   | ext_uart_t/tickgen/TxD_shift_reg[0][0]            |                                             |                3 |             16 |
+|  clk_50M_IBUF_BUFG   | ext_uart_t/tickgen/TxD_shift_reg[0][0]            |                                             |                2 |             16 |
 |  clk_50M_IBUF_BUFG   | ext_uart_t/ext_uart_tx_reg[7][0]                  |                                             |                2 |             16 |
 |  clk_50M_IBUF_BUFG   |                                                   | vga800x600at75/vdata                        |                3 |             22 |
-|  clk_50M_IBUF_BUFG   | ext_uart_r/tickgen/FSM_onehot_RxD_state_reg[0][0] |                                             |                3 |             22 |
-|  clk_50M_IBUF_BUFG   | ext_uart_t/tickgen/E[0]                           |                                             |                3 |             22 |
+|  clk_50M_IBUF_BUFG   | ext_uart_r/tickgen/FSM_onehot_RxD_state_reg[0][0] |                                             |                2 |             22 |
+|  clk_50M_IBUF_BUFG   | ext_uart_t/tickgen/E[0]                           |                                             |                2 |             22 |
 |  clk_50M_IBUF_BUFG   | vga800x600at75/vdata                              | vga800x600at75/vdata[11]_i_1_n_0            |                3 |             22 |
-|  clock_btn_IBUF_BUFG | led_bits[15]                                      | reset_btn_IBUF                              |                3 |             24 |
+|  clock_btn_IBUF_BUFG | led_bits__0[15]                                   | reset_btn_IBUF                              |                4 |             24 |
 |  clk_50M_IBUF_BUFG   |                                                   | ext_uart_t/FSM_onehot_TxD_state_reg_n_0_[0] |                7 |             44 |
-|  clock_btn_IBUF_BUFG | input_b                                           | reset_btn_IBUF                              |                8 |             64 |
-|  clock_btn_IBUF_BUFG | input_a                                           | reset_btn_IBUF                              |                8 |             64 |
-|  clock_btn_IBUF_BUFG | result                                            | reset_btn_IBUF                              |               16 |             66 |
-|  clk_50M_IBUF_BUFG   |                                                   |                                             |               11 |             68 |
+|  clock_btn_IBUF_BUFG | input_b[31]_i_1_n_0                               | reset_btn_IBUF                              |               13 |             64 |
+|  clock_btn_IBUF_BUFG | input_a                                           | reset_btn_IBUF                              |               13 |             64 |
+|  clk_50M_IBUF_BUFG   |                                                   |                                             |               13 |             68 |
 +----------------------+---------------------------------------------------+---------------------------------------------+------------------+----------------+
 
 

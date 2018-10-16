@@ -162,7 +162,7 @@ OTHERS DEFAULT NOTHING
 always@(posedge clock_btn or posedge reset_btn) begin
     if(reset_btn) begin // 复位按下，设置输入数和LED数码管为初始值
         flag <= INPUT_A;
-        led_bits <= 16'b1111111111111111;
+        led_bits <= 16'b1010101010101010;
         input_a <= 32'b0;
         input_b <= 32'b0;
         result <= 33'b0;
@@ -176,36 +176,36 @@ always@(posedge clock_btn or posedge reset_btn) begin
        INPUT_A : begin
             input_a <= dip_sw;
             flag <= INPUT_B;
-            led_bits <= input_a[15:0];
+            led_bits <= dip_sw[15:0];
        end
        INPUT_B : begin
             input_b <= dip_sw;
             flag <= CALC_OP;
-            led_bits <= input_b[15:0];
+            led_bits <= dip_sw[15:0];
        end
        CALC_OP : begin
-            op <= dip_sw[3:0];
+            op = dip_sw[3:0];
             case(op)
             4'b0000 : begin // ADD
-                result <= {0, input_a} + {0, input_b};
+                result = {0, input_a} + {0, input_b};
             end
             4'b0001 : begin //SUB
-                result <= {0, input_a} - {0, input_b};
+                result = {0, input_a} - {0, input_b};
             end
             4'b0010 : begin //AND
-                result <= {0, input_a & input_b};
+                result = {0, input_a & input_b};
             end
             4'b0011 : begin //OR
-                result <= {0, input_a | input_b};
+                result = {0, input_a | input_b};
             end
             4'b0100 : begin //XOR
-                result <= {0, input_a ^ input_b};
+                result = {0, input_a ^ input_b};
             end
             default : begin // DEFAULT
-                result <= {input_a[31], input_a} + {input_b[31], input_b};
+                result = {input_a[31], input_a} + {input_b[31], input_b};
             end
             endcase
-            led_bits <= result[15:0];
+            led_bits = result[15:0];
             flag <= CALC_FO;
             //calc flag
             if(result[32]) 
@@ -218,13 +218,14 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 of <= 1;
        end
        CALC_FO : begin
+            led_bits = 0;
             if(cf)
                 led_bits[0] <= 1;
-            else if(zf)
+            if(zf)
                 led_bits[1] <= 1;
-            else if(sf)
+            if(sf)
                 led_bits[2] <= 1;
-            else if(of)
+            if(of)
                 led_bits[3] <= 1;
             flag <= INPUT_A;
        end

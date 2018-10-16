@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct 16 19:20:55 2018
-# Process ID: 4964
+# Start of session at: Tue Oct 16 20:15:31 2018
+# Process ID: 7544
 # Current directory: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1
 # Command line: vivado.exe -log thinpad_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
 # Log file: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/thinpad_top.vds
