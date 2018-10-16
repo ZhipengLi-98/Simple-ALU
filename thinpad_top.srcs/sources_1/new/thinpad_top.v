@@ -187,6 +187,7 @@ always@(posedge clock_btn or posedge reset_btn) begin
             op = dip_sw[3:0];
             case(op)
             4'b0000 : begin // ADD
+<<<<<<< HEAD
                 result = {1'b0, input_a} + {1'b0, input_b};
             end
             4'b0001 : begin //SUB
@@ -212,6 +213,21 @@ always@(posedge clock_btn or posedge reset_btn) begin
             end
             4'b1000 : begin // SRA
                 result = {1'b0, ($signed(input_a)) >>> input_b};
+=======
+                result = {0, input_a} + {0, input_b};
+            end
+            4'b0001 : begin //SUB
+                result = {0, input_a} - {0, input_b};
+            end
+            4'b0010 : begin //AND
+                result = {0, input_a & input_b};
+            end
+            4'b0011 : begin //OR
+                result = {0, input_a | input_b};
+            end
+            4'b0100 : begin //XOR
+                result = {0, input_a ^ input_b};
+>>>>>>> 12cf0e0266dc60d69c997e315f6284c051e95cbf
             end
             4'b1001 : begin //ROL
                 result = {1'b0, (input_a << input_b)|(input_a >> (32-input_b))};
