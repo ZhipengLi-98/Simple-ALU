@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint thinpad_top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.cache/wt [current_project]
+  set_property webtalk.parent_dir D:/2018autumn/organization/Simple-ALU/thinpad_top.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force thinpad_top.mmi }
   write_bitstream -force thinpad_top.bit 

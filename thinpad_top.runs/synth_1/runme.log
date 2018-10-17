@@ -14,50 +14,50 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5988 
+INFO: Helper process launched with PID 12944 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 387.113 ; gain = 98.238
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 387.105 ; gain = 97.414
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
 	Parameter INPUT_A bound to: 2'b00 
 	Parameter INPUT_B bound to: 2'b01 
 	Parameter CALC_OP bound to: 2'b10 
 	Parameter CALC_FO bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'pll_example' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.runs/synth_1/.Xil/Vivado-3172-15E2/realtime/pll_example_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.runs/synth_1/.Xil/Vivado-3172-15E2/realtime/pll_example_stub.v:5]
-INFO: [Synth 8-226] default block is never used [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:175]
-WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:238]
-WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:240]
-WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:242]
-WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:244]
-INFO: [Synth 8-6157] synthesizing module 'async_receiver' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:75]
+INFO: [Synth 8-6157] synthesizing module 'pll_example' [D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/.Xil/Vivado-9188-DESKTOP-N99O3L4/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/.Xil/Vivado-9188-DESKTOP-N99O3L4/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-226] default block is never used [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:175]
+WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:242]
+WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:244]
+WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:246]
+WARNING: [Synth 8-6090] variable 'led_bits' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:248]
+INFO: [Synth 8-6157] synthesizing module 'async_receiver' [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:75]
 	Parameter ClkFrequency bound to: 50000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 	Parameter Oversampling bound to: 8 - type: integer 
 	Parameter l2o bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'BaudTickGen' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6157] synthesizing module 'BaudTickGen' [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
 	Parameter ClkFrequency bound to: 50000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 	Parameter Oversampling bound to: 8 - type: integer 
 	Parameter AccWidth bound to: 21 - type: integer 
 	Parameter ShiftLimiter bound to: 7 - type: integer 
 	Parameter Inc bound to: 3221 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen' (2#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
-INFO: [Synth 8-6155] done synthesizing module 'async_receiver' (3#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:75]
-WARNING: [Synth 8-350] instance 'ext_uart_r' of module 'async_receiver' requires 7 connections, but only 5 given [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:260]
-INFO: [Synth 8-6157] synthesizing module 'async_transmitter' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen' (2#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'async_receiver' (3#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:75]
+WARNING: [Synth 8-350] instance 'ext_uart_r' of module 'async_receiver' requires 7 connections, but only 5 given [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:264]
+INFO: [Synth 8-6157] synthesizing module 'async_transmitter' [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:14]
 	Parameter ClkFrequency bound to: 50000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'BaudTickGen__parameterized0' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6157] synthesizing module 'BaudTickGen__parameterized0' [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
 	Parameter ClkFrequency bound to: 50000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 	Parameter Oversampling bound to: 1 - type: integer 
 	Parameter AccWidth bound to: 21 - type: integer 
 	Parameter ShiftLimiter bound to: 4 - type: integer 
 	Parameter Inc bound to: 403 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen__parameterized0' (3#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
-INFO: [Synth 8-6155] done synthesizing module 'async_transmitter' (4#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:14]
-INFO: [Synth 8-6157] synthesizing module 'vga' [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/vga.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen__parameterized0' (3#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'async_transmitter' (4#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/async.v:14]
+INFO: [Synth 8-6157] synthesizing module 'vga' [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/vga.v:15]
 	Parameter WIDTH bound to: 12 - type: integer 
 	Parameter HSIZE bound to: 800 - type: integer 
 	Parameter HFP bound to: 856 - type: integer 
@@ -69,42 +69,42 @@ INFO: [Synth 8-6157] synthesizing module 'vga' [C:/Users/liujiashuo/Desktop/Simp
 	Parameter VMAX bound to: 666 - type: integer 
 	Parameter HSPP bound to: 1 - type: integer 
 	Parameter VSPP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vga' (5#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/vga.v:15]
-WARNING: [Synth 8-6014] Unused sequential element result_reg was removed.  [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:168]
-WARNING: [Synth 8-6014] Unused sequential element op_reg was removed.  [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:187]
-WARNING: [Synth 8-3848] Net dpy0 in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:13]
-WARNING: [Synth 8-3848] Net dpy1 in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:14]
-WARNING: [Synth 8-3848] Net uart_rdn in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:17]
-WARNING: [Synth 8-3848] Net uart_wrn in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:18]
-WARNING: [Synth 8-3848] Net base_ram_addr in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:25]
-WARNING: [Synth 8-3848] Net base_ram_be_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:26]
-WARNING: [Synth 8-3848] Net base_ram_ce_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:27]
-WARNING: [Synth 8-3848] Net base_ram_oe_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:28]
-WARNING: [Synth 8-3848] Net base_ram_we_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:29]
-WARNING: [Synth 8-3848] Net ext_ram_addr in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:33]
-WARNING: [Synth 8-3848] Net ext_ram_be_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:34]
-WARNING: [Synth 8-3848] Net ext_ram_ce_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:35]
-WARNING: [Synth 8-3848] Net ext_ram_oe_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:36]
-WARNING: [Synth 8-3848] Net ext_ram_we_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:37]
-WARNING: [Synth 8-3848] Net flash_a in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:44]
-WARNING: [Synth 8-3848] Net flash_rp_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:46]
-WARNING: [Synth 8-3848] Net flash_vpen in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:47]
-WARNING: [Synth 8-3848] Net flash_ce_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:48]
-WARNING: [Synth 8-3848] Net flash_oe_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:49]
-WARNING: [Synth 8-3848] Net flash_we_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:50]
-WARNING: [Synth 8-3848] Net flash_byte_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:51]
-WARNING: [Synth 8-3848] Net sl811_a0 in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:54]
-WARNING: [Synth 8-3848] Net sl811_wr_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:56]
-WARNING: [Synth 8-3848] Net sl811_rd_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:57]
-WARNING: [Synth 8-3848] Net sl811_cs_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:58]
-WARNING: [Synth 8-3848] Net sl811_rst_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:59]
-WARNING: [Synth 8-3848] Net sl811_dack_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:60]
-WARNING: [Synth 8-3848] Net dm9k_cmd in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:65]
-WARNING: [Synth 8-3848] Net dm9k_iow_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:67]
-WARNING: [Synth 8-3848] Net dm9k_ior_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:68]
-WARNING: [Synth 8-3848] Net dm9k_cs_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:69]
-WARNING: [Synth 8-3848] Net dm9k_pwrst_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (6#1) [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (5#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/vga.v:15]
+WARNING: [Synth 8-6014] Unused sequential element result_reg was removed.  [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:168]
+WARNING: [Synth 8-6014] Unused sequential element op_reg was removed.  [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:187]
+WARNING: [Synth 8-3848] Net dpy0 in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:13]
+WARNING: [Synth 8-3848] Net dpy1 in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:14]
+WARNING: [Synth 8-3848] Net uart_rdn in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:17]
+WARNING: [Synth 8-3848] Net uart_wrn in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:18]
+WARNING: [Synth 8-3848] Net base_ram_addr in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:25]
+WARNING: [Synth 8-3848] Net base_ram_be_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:26]
+WARNING: [Synth 8-3848] Net base_ram_ce_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:27]
+WARNING: [Synth 8-3848] Net base_ram_oe_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:28]
+WARNING: [Synth 8-3848] Net base_ram_we_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:29]
+WARNING: [Synth 8-3848] Net ext_ram_addr in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:33]
+WARNING: [Synth 8-3848] Net ext_ram_be_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:34]
+WARNING: [Synth 8-3848] Net ext_ram_ce_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:35]
+WARNING: [Synth 8-3848] Net ext_ram_oe_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:36]
+WARNING: [Synth 8-3848] Net ext_ram_we_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:37]
+WARNING: [Synth 8-3848] Net flash_a in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:44]
+WARNING: [Synth 8-3848] Net flash_rp_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:46]
+WARNING: [Synth 8-3848] Net flash_vpen in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:47]
+WARNING: [Synth 8-3848] Net flash_ce_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:48]
+WARNING: [Synth 8-3848] Net flash_oe_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:49]
+WARNING: [Synth 8-3848] Net flash_we_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:50]
+WARNING: [Synth 8-3848] Net flash_byte_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:51]
+WARNING: [Synth 8-3848] Net sl811_a0 in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:54]
+WARNING: [Synth 8-3848] Net sl811_wr_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:56]
+WARNING: [Synth 8-3848] Net sl811_rd_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:57]
+WARNING: [Synth 8-3848] Net sl811_cs_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:58]
+WARNING: [Synth 8-3848] Net sl811_rst_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:59]
+WARNING: [Synth 8-3848] Net sl811_dack_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:60]
+WARNING: [Synth 8-3848] Net dm9k_cmd in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:65]
+WARNING: [Synth 8-3848] Net dm9k_iow_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:67]
+WARNING: [Synth 8-3848] Net dm9k_ior_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:68]
+WARNING: [Synth 8-3848] Net dm9k_cs_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:69]
+WARNING: [Synth 8-3848] Net dm9k_pwrst_n in module/entity thinpad_top does not have driver. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (6#1) [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
 WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[7]
 WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[6]
 WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[5]
@@ -207,7 +207,7 @@ WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_oe_n
 WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_we_n
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 440.695 ; gain = 151.820
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 441.707 ; gain = 152.016
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -220,51 +220,51 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 440.695 ; gain = 151.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 441.707 ; gain = 152.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 440.695 ; gain = 151.820
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 441.707 ; gain = 152.016
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg676-2L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
-Finished Parsing XDC File [c:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
-Parsing XDC File [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
-WARNING: [Vivado 12-507] No nets matched 'clk_11M0592_IBUF'. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:4]
-WARNING: [Constraints 18-619] A clock with name 'clk_50M' already exists, overwriting the previous clock with the same name. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:6]
-WARNING: [Vivado 12-507] No nets matched 'clock_btn_IBUF'. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:18]
-WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:19]
-Finished Parsing XDC File [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thinpad_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
+Parsing XDC File [d:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Finished Parsing XDC File [d:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Parsing XDC File [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_11M0592_IBUF'. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:4]
+WARNING: [Constraints 18-619] A clock with name 'clk_50M' already exists, overwriting the previous clock with the same name. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'clock_btn_IBUF'. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:18]
+WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:19]
+Finished Parsing XDC File [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thinpad_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 792.973 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 793.789 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 792.973 ; gain = 504.098
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 793.789 ; gain = 504.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 792.973 ; gain = 504.098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 793.789 ; gain = 504.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_50M. (constraint file  c:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_50M. (constraint file  c:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_50M. (constraint file  d:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_50M. (constraint file  d:/2018autumn/organization/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for clock_gen. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 792.973 ; gain = 504.098
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 793.789 ; gain = 504.098
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'RxD_state_reg' in module 'async_receiver'
 INFO: [Synth 8-5544] ROM "RxD_bit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -272,7 +272,6 @@ INFO: [Synth 8-5544] ROM "RxD_bit" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "OversamplingCnt0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'TxD_state_reg' in module 'async_transmitter'
 INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/new/thinpad_top.v:188]
 INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'thinpad_top'
 INFO: [Synth 8-5545] ROM "zf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "input_b" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -321,7 +320,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'TxD_state_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'flag_reg' using encoding 'sequential' in module 'thinpad_top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 792.973 ; gain = 504.098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 793.789 ; gain = 504.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -334,8 +333,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     33 Bit       Adders := 1     
 	   3 Input     33 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
 	   2 Input     22 Bit       Adders := 2     
 	   2 Input     12 Bit       Adders := 2     
 	   2 Input      6 Bit       Adders := 1     
@@ -354,8 +354,6 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 9     
 +---Muxes : 
-	  11 Input     33 Bit        Muxes := 2     
-	   4 Input     33 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 3     
 	   2 Input     12 Bit        Muxes := 2     
 	  11 Input     11 Bit        Muxes := 2     
@@ -363,10 +361,9 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 1     
 	  11 Input      4 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
-	  11 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 15    
-	  11 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 6     
 	   4 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -378,8 +375,9 @@ Hierarchical RTL Component report
 Module thinpad_top 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     33 Bit       Adders := 1     
 	   3 Input     33 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
@@ -388,12 +386,10 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	  11 Input     33 Bit        Muxes := 2     
-	   4 Input     33 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 3     
-	  11 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 6     
 Module BaudTickGen 
 Detailed RTL Component Info : 
@@ -466,7 +462,7 @@ INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "zf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3332] Sequential element (ext_uart_r/RxD_endofpacket_reg) is unused and will be removed from module thinpad_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 792.973 ; gain = 504.098
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 793.789 ; gain = 504.098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -482,13 +478,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen/clk_out2' to pi
 WARNING: [Synth 8-565] redefining clock 'clk_50M'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 792.973 ; gain = 504.098
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 793.789 ; gain = 504.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 804.875 ; gain = 516.000
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 809.848 ; gain = 520.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -500,7 +496,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -524,7 +520,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -537,7 +533,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -549,25 +545,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -586,14 +582,14 @@ Report Cell Usage:
 +------+------------+------+
 |1     |pll_example |     1|
 |2     |BUFG        |     1|
-|3     |CARRY4      |    35|
+|3     |CARRY4      |    52|
 |4     |LUT1        |    45|
-|5     |LUT2        |    29|
+|5     |LUT2        |   120|
 |6     |LUT3        |    53|
-|7     |LUT4        |   134|
-|8     |LUT5        |   141|
-|9     |LUT6        |   370|
-|10    |MUXF7       |    10|
+|7     |LUT4        |   112|
+|8     |LUT5        |   148|
+|9     |LUT6        |   350|
+|10    |MUXF7       |     1|
 |11    |FDCE        |    78|
 |12    |FDPE        |     8|
 |13    |FDRE        |   128|
@@ -607,7 +603,7 @@ Report Instance Areas:
 +------+-----------------+----------------------------+------+
 |      |Instance         |Module                      |Cells |
 +------+-----------------+----------------------------+------+
-|1     |top              |                            |  1216|
+|1     |top              |                            |  1280|
 |2     |  ext_uart_r     |async_receiver              |    77|
 |3     |    tickgen      |BaudTickGen                 |    47|
 |4     |  ext_uart_t     |async_transmitter           |    69|
@@ -615,29 +611,27 @@ Report Instance Areas:
 |6     |  vga800x600at75 |vga                         |    54|
 +------+-----------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 221 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 822.008 ; gain = 180.855
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.008 ; gain = 533.133
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 827.633 ; gain = 185.859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 827.633 ; gain = 537.941
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'thinpad_top' is not ideal for floorplanning, since the cellview 'thinpad_top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
-CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'pll_example' for instance 'clock_gen'. The XDC file c:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_board.xdc will not be read for this cell.
-CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'pll_example' for instance 'clock_gen'. The XDC file c:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xdc will not be read for this cell.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 147 Warnings, 2 Critical Warnings and 0 Errors encountered.
+49 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 822.008 ; gain = 544.602
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 827.633 ; gain = 549.414
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/liujiashuo/Desktop/Simple-ALU/thinpad_top.runs/synth_1/thinpad_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/thinpad_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 822.008 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 16 22:01:06 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 827.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 17 18:11:17 2018...

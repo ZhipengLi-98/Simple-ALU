@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 17 18:00:09 2018
+# Process ID: 2928
+# Current directory: D:/2018autumn/organization/Simple-ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10404 D:\2018autumn\organization\Simple-ALU\thinpad_top.xpr
+# Log file: D:/2018autumn/organization/Simple-ALU/vivado.log
+# Journal file: D:/2018autumn/organization/Simple-ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/2018autumn/organization/Simple-ALU/thinpad_top.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/liujiashuo/Desktop/Simple-ALU' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/programs/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 789.945 ; gain = 89.320
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Oct 17 18:10:31 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Oct 17 18:11:48 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Oct 17 18:13:16 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log

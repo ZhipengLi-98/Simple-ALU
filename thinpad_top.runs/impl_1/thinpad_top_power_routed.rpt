@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Tue Oct 16 22:03:19 2018
-| Host             : 15E2 running 64-bit major release  (build 9200)
+| Date             : Wed Oct 17 18:13:08 2018
+| Host             : DESKTOP-N99O3L4 running 64-bit major release  (build 9200)
 | Command          : report_power -file thinpad_top_power_routed.rpt -pb thinpad_top_power_summary_routed.pb -rpx thinpad_top_power_routed.rpx
 | Design           : thinpad_top
 | Device           : xc7a100tfgg676-2L
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        4 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1048 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      679 |     63400 |            1.07 |
-|   CARRY4       |    <0.001 |       35 |     15850 |            0.22 |
+| Slice Logic    |    <0.001 |     1112 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      754 |     63400 |            1.19 |
+|   CARRY4       |    <0.001 |       52 |     15850 |            0.33 |
 |   Register     |    <0.001 |      219 |    126800 |            0.17 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |       10 |     63400 |            0.02 |
+|   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
 |   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |     0.001 |      992 |       --- |             --- |
+| Signals        |     0.001 |     1073 |       --- |             --- |
 | I/O            |     0.026 |      177 |       300 |           59.00 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.126 |          |           |                 |

@@ -187,11 +187,18 @@ always@(posedge clock_btn or posedge reset_btn) begin
             op = dip_sw[3:0];
             case(op)
             4'b0000 : begin // ADD
-<<<<<<< HEAD
                 result = {1'b0, input_a} + {1'b0, input_b};
+                if(result[32]) 
+                    cf <= 1;
+                if((~input_a[31] && ~input_b[31] && result[31]) || (input_a[31] && input_b[31] && ~result[31]))
+                    of <= 1;
             end
             4'b0001 : begin //SUB
                 result = {1'b0, input_a} - {1'b0, input_b};
+                if(result[32]) 
+                    cf <= 1;
+                if((input_a[31] && ~input_b[31] && ~result[31]) || (~input_a[31] && input_b[31] && result[31]))
+                    of <= 1;
             end
             4'b0010 : begin //AND
                 result = {1'b0, input_a & input_b};
@@ -213,21 +220,6 @@ always@(posedge clock_btn or posedge reset_btn) begin
             end
             4'b1000 : begin // SRA
                 result = {1'b0, ($signed(input_a)) >>> input_b};
-=======
-                result = {0, input_a} + {0, input_b};
-            end
-            4'b0001 : begin //SUB
-                result = {0, input_a} - {0, input_b};
-            end
-            4'b0010 : begin //AND
-                result = {0, input_a & input_b};
-            end
-            4'b0011 : begin //OR
-                result = {0, input_a | input_b};
-            end
-            4'b0100 : begin //XOR
-                result = {0, input_a ^ input_b};
->>>>>>> 12cf0e0266dc60d69c997e315f6284c051e95cbf
             end
             4'b1001 : begin //ROL
                 result = {1'b0, (input_a << input_b)|(input_a >> (32-input_b))};
@@ -239,14 +231,10 @@ always@(posedge clock_btn or posedge reset_btn) begin
             led_bits = result[15:0];
             flag <= CALC_FO;
             //calc flag
-            if(result[32]) 
-                cf <= 1;
             if(result[31:0] == 0)
                 zf <= 1;
             if(result[31] == 1)
                 sf <= 1;
-            if((~input_a[31] && ~input_b[31] && result[31]) || (input_a[31] && input_b[31] && ~result[31]))
-                of <= 1;
        end
        CALC_FO : begin
             led_bits = 0;
