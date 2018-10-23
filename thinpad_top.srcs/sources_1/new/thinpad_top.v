@@ -129,9 +129,10 @@ end
 // SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
 // SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
 
+
 reg[15:0] led_bits;
 assign leds = led_bits;
-
+/*
 reg[31:0] input_a;
 reg[31:0] input_b;
 reg[32:0] result;
@@ -144,20 +145,20 @@ parameter INPUT_B = 2'b01;
 parameter CALC_OP = 2'b10;
 parameter CALC_FO = 2'b11;
 
-/*
-ALU功能列表
-0000 ADD 0
-0001 SUB 1
-0010 AND 2
-0011 OR  3
-0100 XOR 4
-0101 NOT 5
-0110 SLL 6
-0111 SRL 7
-1000 SRA 8
-1001 ROL 9
-OTHERS DEFAULT NOTHING
-*/ 
+
+//ALU功能列表
+//0000 ADD 0
+//0001 SUB 1
+//0010 AND 2
+//0011 OR  3
+//0100 XOR 4
+//0101 NOT 5
+//0110 SLL 6
+//0111 SRL 7
+//1000 SRA 8
+//1001 ROL 9
+//OTHERS DEFAULT NOTHING
+
 
 always@(posedge clock_btn or posedge reset_btn) begin
     if(reset_btn) begin // 复位按下，设置输入数和LED数码管为初始值
@@ -251,6 +252,44 @@ always@(posedge clock_btn or posedge reset_btn) begin
        default : begin
        end
        endcase
+    end
+end
+*/
+
+reg[31:0] input_address;
+reg[31:0] input_data;
+wire temp_ce, temp_oe, temp_we;//输入输出必须是wire
+assign temp_ce = base_ram_ce_n;//BaseRAM片选，低有效
+assign temp_oe = base_ram_oe_n;//BaseRAM读使能，低有效
+assign temp_we = base_ram_we_n; //BaseRAM写使能，低有效
+reg [1:0] state;
+localparam [1:0] SWITCH_ADDRESS = 2'b00,
+                 SWITCH_DATA = 2'b01,
+                 STORE_DATA = 2'b10,
+                 LED_DATA = 2'b11,
+
+always @(posedge clock_btn or posedge reset_btn) begin//ram operation
+    if(reset_btn) begin
+        state <= SWITCH_ADDRESS;
+    end
+    else begin
+        case(state)
+        SWITCH_ADDRESS: begin
+            input_address <= dip_sw;
+            state <= SWITCH_DATA;
+            led_bits <= dip_sw[15:0];
+        end
+        SWITCH_DATA: begin
+            input_data <= dip_sw;
+            state <= STORE_DATA;
+        end
+        STORE_DATA: begin
+            
+        end
+        LED_DATA: begin
+            
+        end
+        endcase;
     end
 end
 
